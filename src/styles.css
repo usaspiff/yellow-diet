@@ -1,0 +1,11 @@
+#colors_sketch {
+  border: solid;
+  margin-bottom: 20px;
+}
+
+#color_palette {
+  width: 100px;
+  height: 80px;
+  border: solid;
+  margin-top: 20px;
+}
