@@ -1,3 +1,3 @@
-#Yellow Diet
+# Yellow Diet
 
-###Image uploader with rgb-averager
+### Image uploader with rgb-averager
