@@ -1,6 +1,32 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body {
+  background-color: yellow;
+}
+
+header {
+  background-color: yellow;
+  height: 70px;
+  -webkit-box-shadow: 40px 2px 4px 0px rgba(179,179,179,0.5);
+  -moz-box-shadow: 40px 2px 4px 0px rgba(179,179,179,0.5);
+  box-shadow: 40px 2px 4px 0px rgba(179,179,179,0.5);
+  margin-bottom: 4px;
+}
+
+h1 {
+  padding-top: 15px;
+  padding-left: 50px;
+}
+
 #colors_sketch {
+  width: 640px;
+  height: 480px;
   border: solid;
   margin-bottom: 20px;
+  background-color: red;
 }
 
 #color_palette {
