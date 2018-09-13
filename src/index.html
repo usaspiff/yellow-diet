@@ -15,17 +15,36 @@
         <div id=nav-icon></div>
     </header>
     <main>
-        <canvas id="colors_sketch"></canvas>
+        <div id="philo">
+            <p>The Sun is key for life to exist and thrive. It blesses us with heat, light, and gifted us liquid water.<br />The
+                Yellow Diet uses the Sun's guidance, its yellow color, to make nutritious decisions by eating foods
+                that match our star's color spectrum.</p>
+        </div>
+
+        <div id="result">
+            <canvas id="colors_sketch"></canvas>
+            <div id="text-average">
+                <p class="text">Food average color: <span id="result-rgb"></span>.</p>
+            </div>
+
+            <div id="color_palette"></div>
+            <div id="ml-summary"></div>
+        </div>
 
         <div id="file_loader">
             <input type='file' id="fileUpload">
         </div>
 
-        <div id="color_palette"></div>
-
     </main>
 
     <footer>
+        <div id="disclaimer">
+            <p>Disclaimer</p>
+        </div>
+        <div id="credits">
+            <p>© 2018. Created by Nick. Project on Github</p>
+            <p>Powered by Brain.js on Github</p>
+        </div>
 
     </footer>
 
