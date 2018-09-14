@@ -11,7 +11,7 @@ function readImage() {
         FR.onload = function (e) {
             var img = new Image();
             img.onload = function () {
-                context.drawImage(img, 0, 0, img.width, img.height, 0, 0, 640, 480);
+                context.drawImage(img, 0, 0, img.width, img.height, 0, 0, 300, 200);
                 findAvgColor();
             };
             img.src = e.target.result;
@@ -47,7 +47,7 @@ var getAverageRGB = function (imgData) {
 
 // process uploaded image to extract average rgba
 function findAvgColor() {
-    var pixels = context.getImageData(50, 50, 540, 380);
+    var pixels = context.getImageData(10, 10, 280, 180);
     var averageRGBA = getAverageRGB(pixels.data);
     document.getElementById("color_palette").style.backgroundColor = averageRGBA;
     console.log(averageRGBA);
