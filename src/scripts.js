@@ -49,14 +49,49 @@ const getAverageRGB = function (imgData) {
     let avgGreen = Math.floor(green / total);
     let avgBlue = Math.floor(blue / total);
 
-    return "rgba(" + avgRed + "," + avgGreen + "," + avgBlue + ", 1)";
+    return "rgb(" + avgRed + "," + avgGreen + "," + avgBlue + ")";
 };
 
 // process uploaded image to extract average rgba
+// removed 10 pixels all around in const pixels to create a border and prevent content around the center of the image to be cumputed.
 function findAvgColor() {
     const pixels = context.getImageData(10, 10, 280, 180);
     const averageRGBA = getAverageRGB(pixels.data);
     document.getElementById("color_palette").style.backgroundColor = averageRGBA;
     document.getElementById("result-rgb").innerHTML = averageRGBA;
     console.log(averageRGBA);
+    isItYellow(averageRGBA);
+}
+
+// function to indicate user if their food is yellow or not
+function isItYellow(rgb) {
+    let rgbValuesFilter = /rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/;
+    let rgbArray = rgbValuesFilter.exec(rgb);
+    console.log("It is " + rgbArray);
+    let r = rgbArray[0];
+    let g = rgbArray[1];
+    let a = rgbArray[2];
+
+    if(r < 230) {
+        document.getElementById("ml-summary").innerHTML = "It's not yellow!";
+    } else if(
+         g < 150
+    ) {
+        document.getElementById("ml-summary").innerHTML = "It's not yellow!";
+    } else if(
+        g > r
+    ) {
+        document.getElementById("ml-summary").innerHTML = "It's not yellow!";
+    } else if(
+        r-g > 80
+    ) {
+        document.getElementById("ml-summary").innerHTML = "It's not yellow!";
+    } else if(
+        g-b < 100
+    ) {
+        document.getElementById("ml-summary").innerHTML = "It's not yellow!";
+    } else {
+        document.getElementById("ml-summary").innerHTML = "Your food is yellow!";
+    }
+
 }
