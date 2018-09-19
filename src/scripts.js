@@ -57,5 +57,6 @@ function findAvgColor() {
     const pixels = context.getImageData(10, 10, 280, 180);
     const averageRGBA = getAverageRGB(pixels.data);
     document.getElementById("color_palette").style.backgroundColor = averageRGBA;
+    document.getElementById("result-rgb").innerHTML = averageRGBA;
     console.log(averageRGBA);
 }

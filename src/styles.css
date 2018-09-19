@@ -1,6 +1,7 @@
 *{
     padding:0;
     margin:0;
+    text-align: center;
 }
 
 
@@ -43,12 +44,51 @@ h1 {
 }
 
 #color_palette {
-  width: 100px;
-  height: 80px;
+  width: 300px;
+  height: 100px;
   border: solid;
   margin-top: 20px;
 }
 
 .default-hide {
   display: none;
+}
+
+.disclaimer {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.disclaimer .tooltiptext {
+    visibility: hidden;
+    width: 280px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -140px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.disclaimer .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.disclaimer:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
