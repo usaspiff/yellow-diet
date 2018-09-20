@@ -64,34 +64,18 @@ function findAvgColor() {
 }
 
 // function to indicate user if their food is yellow or not
-function isItYellow(rgb) {
-    let rgbValuesFilter = /rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*\)$/;
-    let rgbArray = rgbValuesFilter.exec(rgb);
+function isItYellow(rgb) {   
+    let rgbArray = rgb.replace(/[^\d,]/g, '').split(',');
     console.log("It is " + rgbArray);
     let r = rgbArray[0];
     let g = rgbArray[1];
     let a = rgbArray[2];
 
-    if(r < 230) {
-        document.getElementById("ml-summary").innerHTML = "It's not yellow!";
-    } else if(
-         g < 150
-    ) {
-        document.getElementById("ml-summary").innerHTML = "It's not yellow!";
-    } else if(
-        g > r
-    ) {
-        document.getElementById("ml-summary").innerHTML = "It's not yellow!";
-    } else if(
-        r-g > 80
-    ) {
-        document.getElementById("ml-summary").innerHTML = "It's not yellow!";
-    } else if(
-        g-b < 100
-    ) {
+    if(r < 210 || g < 150 || g > r || r-g > 80 || g-a < 100) {
         document.getElementById("ml-summary").innerHTML = "It's not yellow!";
     } else {
         document.getElementById("ml-summary").innerHTML = "Your food is yellow!";
     }
 
 }
+
