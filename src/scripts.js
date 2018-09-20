@@ -71,7 +71,7 @@ function isItYellow(rgb) {
     let g = rgbArray[1];
     let a = rgbArray[2];
 
-    if(r < 210 || g < 150 || g > r || r-g > 80 || g-a < 100) {
+    if(r < 185 || g < 125 || g > r || r-g > 80 || g-a < 100) {
         document.getElementById("ml-summary").innerHTML = "It's not yellow!";
     } else {
         document.getElementById("ml-summary").innerHTML = "Your food is yellow!";
