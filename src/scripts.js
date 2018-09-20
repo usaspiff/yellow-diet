@@ -25,6 +25,8 @@ function readImage() {
         document
           .getElementById("result")
           .classList.remove("default-hide");
+        document.getElementById("result").classList.add(" default-display");
+        
     }
 }
 
@@ -72,7 +74,7 @@ function isItYellow(rgb) {
     let a = rgbArray[2];
 
     if(r < 185 || g < 125 || g > r || r-g > 80 || g-a < 100) {
-        document.getElementById("ml-summary").innerHTML = "It's not yellow!";
+        document.getElementById("ml-summary").innerHTML = "WRONG DIET!";
     } else {
         document.getElementById("ml-summary").innerHTML = "Your food is yellow!";
     }

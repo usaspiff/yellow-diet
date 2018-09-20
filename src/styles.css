@@ -1,7 +1,6 @@
 *{
     padding:0;
     margin:0;
-    text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -15,48 +14,94 @@ body {
 
 header {
   background-color:  #ffea00;
-  height: 70px;
+  text-align: center;
+  height: 45px;
+  margin-top: 10px;
+  border-bottom: solid #ffd000;
 }
 
 main {
   overflow: auto;
-  padding-bottom: 80px;
+  padding-bottom: 180px;
 }
 
-footer {
-  position: relative;
-  margin-top: -80px;
-  height: 80px;
-  clear: both;
-  background-color:  #ffea00;
+#manifesto {
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+  background-color: #fffb00;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px 0px rgb(184, 153, 70);
 }
 
-h2 {
-  padding-top: 15px;
-  padding-left: 50px;
+#result {  
+  text-align: center;
 }
-
-#manifesto
 
 #colors_sketch {
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #916d0a;
+  margin-top: 20px;
+  box-shadow: 2px 2px 5px 0px rgb(184, 153, 70);
   width: 300px;
   height: 200px;
-  border: solid;
-  margin-bottom: 20px;
-  background-color: #ffea00;
+  margin-bottom: 10px;
+}
+
+canvas {
+  /* margin: auto;
+  width: 50%; */
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #916d0a;
+  margin-top: 20px;
+  box-shadow: 2px 2px 5px 0px rgb(184, 153, 70);
 }
 
 #color_palette {
+  margin: auto;
+  width: 50%;
   width: 296px;
   height: 96px;
+  border-radius: 6px;
   border-style: solid;
   border-width: 2px;
-  border-color: #d9d28c;
+  border-color: #916d0a;
   margin-top: 20px;
+  box-shadow: 2px 2px 5px 0px rgb(184, 153, 70);  
+}
+
+#ml-summary {
+  margin-top: 33px;
+  font-weight: bold;
+}
+
+#file_loader {
+  
+}
+
+footer {
+  text-align: center;
+  font-size: 80%;
+  position: relative;
+  margin-top: -100px;
+  padding-top: 10px;
+  height: 80px;
+  clear: both;
+  background-color:  #ffea00;
+  border-top: solid #ffd000;
 }
 
 .default-hide {
   display: none;
+}
+
+.default-display {
+  display: flex;
+  flex-direction: column;
 }
 
 .disclaimer {
@@ -67,19 +112,20 @@ h2 {
 
 .disclaimer .tooltiptext {
     visibility: hidden;
-    width: 280px;
-    background-color: #d9d28c;
+    width: 264px;
+    background-color: #ffd000;
     color: black;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 5px;
     position: absolute;
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: -140px;
+    margin-left: -139px;
     opacity: 0;
     transition: opacity 0.3s;
+    box-shadow: 2px 2px 5px 0px rgba(179,174,100,1);
 }
 
 .disclaimer .tooltiptext::after {
@@ -90,10 +136,18 @@ h2 {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #d9d28c transparent transparent transparent;
+    border-color: #ffd000 transparent transparent transparent;
+    box-shadow: 2px 2px 5px 0px rgba(179,174,100,1);
 }
 
 .disclaimer:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+a:link {
+    color: black;
+}
+a:visited {
+    color: black;
 }
