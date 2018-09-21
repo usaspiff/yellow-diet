@@ -1,21 +1,22 @@
 *{
-    padding:0;
-    margin:0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding:0;
+  margin:0;
 }
 
 body {
   background-color: #ffea00;
-  margin-left: 10px;
-  margin-right: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
 }
 
 header {
-  background-color:  #ffea00;
+  background-color:  rgb(50, 50, 50);
   text-align: center;
-  height: 45px;
-  margin-top: 10px;
+  color: yellow;
+  height: 55px;
+  padding-top: 25px;
   border-bottom: solid #ffd000;
+  border-width: 2px;
 }
 
 main {
@@ -24,13 +25,12 @@ main {
 }
 
 #manifesto {
-  margin-top:30px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: auto;
+  margin-top: 30px;
+  max-width: 600px;
   padding: 10px;
   text-align: left;
   background-color: #fffb00;
-  border-radius: 6px;
   box-shadow: 2px 2px 5px 0px rgb(184, 153, 70);
 }
 
@@ -39,7 +39,9 @@ main {
 }
 
 #colors_sketch {
-  border-radius: 6px;
+  margin: auto;
+  max-width: 300px; 
+  width: 100vh;
   border-style: solid;
   border-width: 2px;
   border-color: #916d0a;
@@ -51,7 +53,6 @@ main {
 }
 
 canvas {
-  border-radius: 6px;
   border-style: solid;
   border-width: 2px;
   border-color: #916d0a;
@@ -61,10 +62,9 @@ canvas {
 
 #color_palette {
   margin: auto;
-  width: 50%;
-  width: 296px;
-  height: 96px;
-  border-radius: 6px;
+  max-width: 300px; 
+  width: 100vh;
+  height: 100px;
   border-style: solid;
   border-width: 2px;
   border-color: #916d0a;
@@ -73,13 +73,15 @@ canvas {
 }
 
 #ml-summary {
-  margin-top: 33px;
+  margin-top: 38px;
   font-weight: bold;
 }
 
 .upload-section {
-  width: 20vh;
-}
+  margin: auto;
+  max-width: 300px; 
+  width: 100vh;
+  }
 
 #file_loader {
   margin-top: 40px;
@@ -97,12 +99,11 @@ canvas {
   border: 2px solid #ff7300;
   color: #fffb00;
   background-color: rgb(50, 50, 50);
-  padding: 8px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  /* width: 100px; */
+  padding: 18px 20px;
+  border-radius: 6px;
+  font-size: 100%;
   justify-content: space-around;
-}
+  }
 
 .upload-btn-wrapper input[type=file] {
   font-size: 100px;
@@ -117,11 +118,12 @@ footer {
   font-size: 80%;
   position: relative;
   margin-top: -100px;
-  padding-top: 10px;
+  padding-top: 15px;
   height: 80px;
   clear: both;
   background-color:  #ffea00;
   border-top: solid #ffd000;
+  border-width: 2px;
 }
 
 .default-hide {
@@ -177,6 +179,7 @@ footer {
 a:link {
     color: black;
 }
+
 a:visited {
     color: black;
 }
