@@ -1,3 +1,7 @@
-# Yellow Diet
+The Yellow Diet.com
+======
+### Image uploaded with rgb-averager
+##### Upload a picture (idealy of your food) to find out the average rgb value of the subject and, in the case of food, if it follows the Yellow Diet principles.
 
-### Image uploader with rgb-averager
+##### Try it here: theyellowdiet.com
+

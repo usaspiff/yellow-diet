@@ -22,8 +22,8 @@ function readImage() {
             img.src = e.target.result;
         };
         FR.readAsDataURL(this.files[0]);
-        document.getElementById("result").classList.remove("default-hide");
-        document.getElementById("result").classList.add("default-display");
+        document.getElementById("result").classList.remove("default_hide");
+        document.getElementById("result").classList.add("default_display");
 
     }
 }
@@ -58,7 +58,7 @@ function findAvgColor() {
     const pixels = context.getImageData(10, 10, 280, 180);
     const averageRGBA = getAverageRGB(pixels.data);
     document.getElementById("color_palette").style.backgroundColor = averageRGBA;
-    document.getElementById("result-rgb").innerHTML = averageRGBA;
+    document.getElementById("result_rgb").innerHTML = averageRGBA;
     console.log(averageRGBA);
     isItYellow(averageRGBA);
 }
@@ -72,9 +72,9 @@ function isItYellow(rgb) {
     let a = rgbArray[2];
 
     if (r < 185 || g < 125 || g > r || r - g > 80 || g - a < 100) {
-        document.getElementById("ml-summary").innerHTML = "WRONG DIET!";
+        document.getElementById("ml_summary").innerHTML = "WRONG DIET!";
     } else {
-        document.getElementById("ml-summary").innerHTML = "Your food is yellow!";
+        document.getElementById("ml_summary").innerHTML = "Your food is yellow!";
     }
 
 }

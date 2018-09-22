@@ -1,3 +1,9 @@
+/* CSS file structure:
+#1. CSS sections follow DOM structure
+#2. Additional custom Class and styling */
+
+/* #1. DOM STRUCTURE: */
+
 *{
   padding:0;
   margin:0;
@@ -13,8 +19,8 @@ header {
   background-color:  rgb(50, 50, 50);
   text-align: center;
   color: yellow;
-  height: 55px;
-  padding-top: 25px;
+  height: 60px;
+  padding-top: 13px;
   border-bottom: solid #ffd000;
   border-width: 2px;
 }
@@ -24,94 +30,92 @@ main {
   padding-bottom: 180px;
 }
 
-#manifesto {
-  margin: auto;
-  margin-top: 30px;
-  max-width: 600px;
-  padding: 10px;
-  text-align: left;
-  background-color: #fffb00;
-  box-shadow: 2px 2px 5px 0px rgb(184, 153, 70);
-}
-
-#result {  
-  text-align: center;
-}
-
-#colors_sketch {
-  margin: auto;
-  max-width: 300px; 
-  width: 100vh;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #916d0a;
-  margin-top: 20px;
-  box-shadow: 2px 2px 5px 0px rgb(184, 153, 70);
-  width: 300px;
-  height: 200px;
-  margin-bottom: 10px;
-}
-
-canvas {
-  border-style: solid;
-  border-width: 2px;
-  border-color: #916d0a;
-  margin-top: 20px;
-  box-shadow: 2px 2px 5px 0px rgb(184, 153, 70);
-}
-
-#color_palette {
-  margin: auto;
-  max-width: 300px; 
-  width: 100vh;
-  height: 100px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #916d0a;
-  margin-top: 20px;
-  box-shadow: 2px 2px 5px 0px rgb(184, 153, 70);  
-}
-
-#ml-summary {
-  margin-top: 38px;
-  font-weight: bold;
-}
-
-.upload-section {
-  margin: auto;
-  max-width: 300px; 
-  width: 100vh;
+  #manifesto {
+    margin: auto;
+    margin-top: 30px;
+    max-width: 600px;
+    padding: 10px;
+    text-align: left;
+    background-color: rgb(255, 251, 0);
+    box-shadow: 2px 2px 5px 0px rgb(184, 153, 70);
   }
 
-#file_loader {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-}
-
-.upload-btn-wrapper {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
+  #result {  
+    text-align: center;
   }
 
-.btn {
-  border: 2px solid #ff7300;
-  color: #fffb00;
-  background-color: rgb(50, 50, 50);
-  padding: 18px 20px;
-  border-radius: 6px;
-  font-size: 100%;
-  justify-content: space-around;
-  }
+    #colors_sketch {
+      margin: auto;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #916d0a;
+      margin-top: 20px;
+      box-shadow: 2px 2px 5px 0px rgb(184, 153, 70);
+      width: 300px;
+      height: 200px;
+      margin-bottom: 10px;
+    }
 
-.upload-btn-wrapper input[type=file] {
-  font-size: 100px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  }
+    canvas {
+      border-style: solid;
+      border-width: 2px;
+      border-color: #916d0a;
+      margin-top: 20px;
+      box-shadow: 2px 2px 5px 0px rgb(184, 153, 70);
+    }
+
+    #color_palette {
+      margin: auto;
+      max-width: 300px; 
+      width: 100vh;
+      height: 100px;
+      border-style: solid;
+      border-width: 2px;
+      border-color: #916d0a;
+      margin-top: 20px;
+      box-shadow: 2px 2px 5px 0px rgb(184, 153, 70);  
+    }
+
+    #ml_summary {
+      margin-top: 38px;
+      font-weight: bold;
+    }
+
+  .upload_section {
+    margin: auto;
+    max-width: 300px; 
+    width: 100vh;
+    }
+
+    #file_loader {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .upload_btn_wrapper {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      }
+
+    .btn {
+      border: 2px solid #ff7300;
+      color: #fffb00;
+      background-color: rgb(50, 50, 50);
+      padding: 18px 20px;
+      border-radius: 6px;
+      font-size: 100%;
+      justify-content: space-around;
+      }
+
+    .upload_btn_wrapper input[type=file] {
+      font-size: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      }
 
 footer {
   text-align: center;
@@ -126,11 +130,13 @@ footer {
   border-width: 2px;
 }
 
-.default-hide {
+/* #2. Additional custom Class and styling */
+
+.default_hide {
   display: none;
 }
 
-.default-display {
+.default_display {
   display: flex;
   flex-direction: column;
 }
