@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Image uploader with rgb-averager">
+    <meta name="keywords" content="rgb,canvas,image,upload">
+    <meta name="author" content="Nick Tchemitcheff">
     <title>The Yellow Diet</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 
@@ -37,7 +40,9 @@
         <div class="upload_section">
             <div id="file_loader" class="upload_btn_wrapper">
                 <button class="btn">Take picture</button>
-                <input type='file' id="fileUpload">
+                <form name="upload_image">
+                    <input name="upload_image" type='file' id="fileUpload">
+                </form>
             </div>
         </div>
     </main>
