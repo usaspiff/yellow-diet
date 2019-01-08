@@ -53,7 +53,7 @@ const getAverageRGB = function (imgData) {
 };
 
 // process uploaded image to extract average rgba
-// removed 10 pixels all around in const pixels to create a border and prevent content around the center of the image to be cumputed.
+// removed 10 pixels all around in const pixels to create a border and prevent content around the center of the image to be computed.
 function findAvgColor() {
     const pixels = context.getImageData(10, 10, 280, 180);
     const averageRGBA = getAverageRGB(pixels.data);
