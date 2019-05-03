@@ -3,7 +3,11 @@ The Yellow Diet.com
 ### Image uploader with rgb-averager
 Upload a picture of your food to find out the average rgb value of the subject and if it follows the Yellow Diet principles.
 
-Try it here: [www.theyellowdiet.com](http://theyellowdiet.com)
+Try it here: [www.theyellowdiet.com](http://theyellowdiet.com), or remix it on [Codepen](https://codepen.io/usaspiff/pen/ZMNRKB).
+
+<p align="center">
+  <img src="https://github.com/usaspiff/yellow-diet/blob/master/yellow-diet-demo.jpg">
+</p>
 
 ## Project scope:
 Extract the pixel data from an uploaded picture to average the rgb value and compare it to the arbitrary threshold to determine if the subject falls in the yellow color spectrum.
