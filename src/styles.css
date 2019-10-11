@@ -10,33 +10,43 @@
 }
 
 body {
-  background-color: #ffea00;
+  background: rgb(255,188,0);
+background: linear-gradient(218deg, rgba(255,188,0,1) 0%, rgba(255,196,14,1) 25%, rgba(255,248,0,1) 100%);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   
 }
 
 header {
-  background-color:  rgb(50, 50, 50);
   text-align: center;
-  color: yellow;
-  height: 60px;
-  padding-top: 13px;
+  color: rgb(50, 50, 50);
+  height: 80px;
+  padding-top: 20px;
+  background-color:  #ffea00;
   border-bottom: solid #ffd000;
   border-width: 2px;
 }
 
+header h1 {
+  font-family: 'Playball', cursive;
+  font-size: 44px;
+}
+
 main {
   overflow: auto;
+  padding-top: 40px;
   padding-bottom: 180px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  color: rgb(50, 50, 50);
 }
 
   #manifesto {
     margin: auto;
     margin-top: 30px;
     max-width: 600px;
-    padding: 10px;
+    padding: 40px;
     text-align: left;
-    background-color: rgb(255, 251, 0);
+    background-color:  #ffea00;;
     box-shadow: 2px 2px 5px 0px rgb(184, 153, 70);
   }
 
@@ -100,13 +110,14 @@ main {
       }
 
     .btn {
-      border: 2px solid #ff7300;
-      color: #fffb00;
-      background-color: rgb(50, 50, 50);
-      padding: 18px 20px;
-      border-radius: 6px;
       font-size: 100%;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: bold;
+      color: rgb(50, 50, 50);
+      background-color: rgb(255,188,0);
+      padding: 18px 20px;
       justify-content: space-around;
+      border: 2px solid #ff7300;
       }
 
     .upload_btn_wrapper input[type=file] {
@@ -118,11 +129,13 @@ main {
       }
 
 footer {
+  font-family: 'Nunito Sans', sans-serif;
+  color: rgb(50, 50, 50);
   text-align: center;
   font-size: 80%;
   position: relative;
   margin-top: -100px;
-  padding-top: 15px;
+  padding-top: 35px;
   height: 80px;
   clear: both;
   background-color:  #ffea00;
@@ -150,10 +163,9 @@ footer {
 .disclaimer .tooltiptext {
     visibility: hidden;
     width: 264px;
-    background-color: #ffd000;
-    color: black;
+    background-color: rgb(255,188,0);
+    color: rgb(50, 50, 50);
     text-align: center;
-    border-radius: 6px;
     padding: 5px;
     position: absolute;
     z-index: 1;
@@ -183,9 +195,9 @@ footer {
 }
 
 a:link {
-    color: black;
+    color: rgb(50, 50, 50);
 }
 
 a:visited {
-    color: black;
+    color: rgb(50, 50, 50);
 }
