@@ -11,9 +11,7 @@
 
 body {
   background: rgb(255,188,0);
-background: linear-gradient(218deg, rgba(255,188,0,1) 0%, rgba(255,196,14,1) 25%, rgba(255,248,0,1) 100%);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
+background: linear-gradient(218deg, rgba(255,188,0,1) 0%, rgba(255,196,14,1) 25%, rgba(255,248,0,1) 100%);  
 }
 
 header {
