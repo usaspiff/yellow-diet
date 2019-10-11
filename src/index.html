@@ -1,66 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Image uploader with rgb-averager">
-    <meta name="keywords" content="rgb,canvas,image,upload">
-    <meta name="author" content="Nick Tchemitcheff">
-    <title>The Yellow Diet</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
+  <meta charset="UTF-8">
+  <title>Image upload to canvas & rgb average</title>
+  <link href="https://fonts.googleapis.com/css?family=Playball&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-    <header>
-        <h1>The Yellow Diet</h1>
-    </header>
-    <main>
-        <div id="manifesto">
-            <p>The Sun is key for life to exist and thrive. It blesses us with heat, light, and gifted us liquid water.
-                The Yellow Diet uses the Sun's guidance - its yellow color - to make nutritious decisions by eating
-                foods that match our star's color spectrum.</p>
-            <br />
-            <p>* Upload a picture of your food to find out if it follows the Yellow Diet principles.</p>
-        </div>
+<!-- partial:index.partial.html -->
+<header>
+  <h1>The Yellow Diet</h1>
+</header>
+<main>
+  <div id="manifesto">
+    <p>"The Sun is key for life to exist and thrive. It blesses us with heat, light, and gifted us liquid water. The Yellow Diet uses the Sun's guidance - its yellow color - to make nutritious decisions by eating foods that match our star's color spectrum."</p>
+    <br />
+    <br />
+    <p><strong>Upload a picture of your food and find out if it follows the Yellow Diet principles.</strong></p>
 
-        <div id="result" class="default_hide">
-            <canvas id="colors_sketch"></canvas>
-            <div id="text_average">
-                <p class="text">Food average color: <span id="result_rgb"></span></p>
-            </div>
+    <div id="result" class="default_hide">
+      <canvas id="colors_sketch"></canvas>
+      <div id="text_average">
+        <p class="text">Food average color: <span id="result_rgb"></span></p>
+      </div>
 
-            <div id="color_palette">
-                <div id="ml_summary"></div>
-            </div>
+      <div id="color_palette">
+        <div id="ml_summary"></div>
+      </div>
 
-        </div>
-        <div class="upload_section">
-            <div id="file_loader" class="upload_btn_wrapper">
-                <button class="btn">Take picture</button>
-                <form name="upload_image">
-                    <input name="upload_image" type='file' id="fileUpload">
-                </form>
-            </div>
-        </div>
-    </main>
+    </div>
 
-    <footer>
-        <div class="disclaimer"><b>Disclaimer</b>
-            <span class="tooltiptext">"The Yellow Diet" is a parody website. I am not a nutritionist and do not
-                recommend following the advices listed above. Eating strictly yellow foods likely causes serious
+    <div class="upload_section">
+      <div id="file_loader" class="upload_btn_wrapper">
+        <button class="btn">Take picture</button>
+        <input type='file' id="fileUpload">
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="disclaimer"><b>Disclaimer</b>
+    <span class="tooltiptext">"The Yellow Diet" is a parody website. I am not a nutritionist and do not
+                recommend following the advices listed above. Eating strictly yellow foods can likely cause serious
                 side-effects, injury or death.</span>
-        </div>
-        <div id="credits">
-            <p>Project on <b><a href="https://github.com/usaspiff/yellow-diet">Github</a></b></p>
-        </div>
+  </div>
+  <div id="credits">
+    <p>Project on <b><a target="_blank" href="https://github.com/usaspiff/yellow-diet">Github</a></b></p>
+  </div>
 
-    </footer>
-
+</footer>
+<!-- partial -->
+  <script  src="./script.js"></script>
 
 </body>
-<script type="text/javascript" src="scripts.js"></script>
-
 </html>
