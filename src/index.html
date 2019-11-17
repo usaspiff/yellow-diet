@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Image upload to canvas & rgb average</title>
@@ -7,52 +8,59 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<header>
-  <h1>The Yellow Diet</h1>
-</header>
-<main>
-  <div id="manifesto">
-    <p>"The Sun is key for life to exist and thrive. It blesses us with heat, light, and gifted us liquid water. The Yellow Diet uses the Sun's guidance - its yellow color - to make nutritious decisions by eating foods that match our star's color spectrum."</p>
-    <br />
-    <br />
-    <p><strong>Upload a picture of your food and find out if it follows the Yellow Diet principles.</strong></p>
+  <!-- partial:index.partial.html -->
+  <header>
+    <h1>The Yellow Diet</h1>
+  </header>
+  <div id="page-container">
+    <main>
 
-    <div id="result" class="default_hide">
-      <canvas id="colors_sketch"></canvas>
-      <div id="text_average">
-        <p class="text">Food average color: <span id="result_rgb"></span></p>
+      <div id="manifesto">
+        <p>"The Sun is key for life to exist and thrive. It blesses us with heat, light, and gifted us liquid water. The
+          Yellow Diet uses the Sun's guidance - its yellow color - to make nutritious decisions by eating foods that
+          match our star's color spectrum."</p>
+        <br />
+        <br />
+        <p><strong>Upload a picture of your food and find out if it follows the Yellow Diet principles.</strong></p>
+
+        <div id="result" class="default_hide">
+          <canvas id="colors_sketch"></canvas>
+          <div id="text_average">
+            <p class="text">Food average color: <span id="result_rgb"></span></p>
+          </div>
+
+          <div id="color_palette">
+            <div id="ml_summary"></div>
+          </div>
+
+        </div>
+
+        <div class="upload_section">
+          <div id="file_loader" class="upload_btn_wrapper">
+            <button class="btn">Take picture</button>
+            <input type='file' id="fileUpload">
+          </div>
+        </div>
       </div>
+  </div>
+  </main>
 
-      <div id="color_palette">
-        <div id="ml_summary"></div>
-      </div>
-
+  <footer>
+    <div class="disclaimer"><b>Disclaimer</b>
+      <span class="tooltiptext">"The Yellow Diet" is a parody website. I am not a nutritionist and do not
+        recommend following the advices listed above. Eating strictly yellow foods can likely cause serious
+        side-effects, injury or death.</span>
+    </div>
+    <div id="credits">
+      <p>Project on <b><a target="_blank" href="https://github.com/usaspiff/yellow-diet">Github</a></b></p>
     </div>
 
-    <div class="upload_section">
-      <div id="file_loader" class="upload_btn_wrapper">
-        <button class="btn">Take picture</button>
-        <input type='file' id="fileUpload">
-      </div>
-    </div>
-  </div>
-</main>
-
-<footer>
-  <div class="disclaimer"><b>Disclaimer</b>
-    <span class="tooltiptext">"The Yellow Diet" is a parody website. I am not a nutritionist and do not
-                recommend following the advices listed above. Eating strictly yellow foods can likely cause serious
-                side-effects, injury or death.</span>
-  </div>
-  <div id="credits">
-    <p>Project on <b><a target="_blank" href="https://github.com/usaspiff/yellow-diet">Github</a></b></p>
-  </div>
-
-</footer>
-<!-- partial -->
-  <script  src="./scripts.js"></script>
+  </footer>
+  <!-- partial -->
+  <script src="./scripts.js"></script>
 
 </body>
+
 </html>
